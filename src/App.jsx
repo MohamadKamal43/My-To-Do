@@ -2,10 +2,10 @@ import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import RootLayout from "./Layout/RootLayout";
 import Landing from "./pages/Landing";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Tasks from "./pages/Tasks";
-import UnAuthorizedHOC from "./HOCS/unAuthorizedHOC";
+import UnAuthorizedHOC from "./HOCS/UnAuthorizedHOC";
 import ProtectedHOC from "./HOCS/ProtectedHOC";
 import NotFound from "./pages/NotFound";
 
