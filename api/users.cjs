@@ -38,7 +38,7 @@ module.exports = function handler(req, res) {
   if (req.method === "GET") {
     // Login - check if user exists with email and password
     const { email, password } = req.query;
-
+    
     if (email && password) {
       const user = db.users.find(
         (u) => u.email === email && u.password === password
@@ -55,7 +55,7 @@ module.exports = function handler(req, res) {
   } else if (req.method === "POST") {
     // Register new user
     const { name, email, password } = req.body;
-
+    
     if (!name || !email || !password) {
       res.status(400).json({ message: "All fields are required" });
       return;
