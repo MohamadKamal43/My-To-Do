@@ -1,14 +1,9 @@
 import axios from "axios";
 
-// Use Vercel API URL in production, localhost in development
-const API_BASE_URL = import.meta.env.PROD
-  ? "https://my-to-do-wheat.vercel.app/api"
-  : "http://localhost:3000";
-
 export const authApi = {
   register: async (name, email, password) => {
     try {
-      const user = await axios.post(`${API_BASE_URL}/users`, {
+      const user = await axios.post("http://localhost:3000/users", {
         name,
         email,
         password,
@@ -22,7 +17,7 @@ export const authApi = {
   login: async (email, password) => {
     try {
       const { data } = await axios.get(
-        `${API_BASE_URL}/users?email=${email}&password=${password}`
+        `http://localhost:3000/users?email=${email}&password=${password}`
       );
       const user = data[0];
       if (!user) {
