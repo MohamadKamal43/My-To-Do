@@ -59,7 +59,7 @@ export default function AddTaskForm({ onTaskAdded }) {
   });
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full max-w-4xl">
+    <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-full ">
       <h1 className="text-3xl font-bold mb-2 text-gray-800">
         Welcome back, {user.name}!
       </h1>
@@ -116,7 +116,7 @@ export default function AddTaskForm({ onTaskAdded }) {
         <div className="lg:col-span-4 flex justify-center mt-4">
           <button
             type="submit"
-            disabled={isSubmitting}
+            disabled={isSubmitting || !formik.isValid}
             className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-8 rounded-xl transition duration-200 flex items-center gap-2">
             {isSubmitting ? (
               <>

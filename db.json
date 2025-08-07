@@ -13,15 +13,9 @@
       "password": "111111111"
     },
     {
-      "id": "df77",
-      "name": "ali kamal",
-      "email": "john.doe@example.com",
-      "password": "11111111"
-    },
-    {
-      "id": "f0c7",
-      "name": "ali",
-      "email": "example@gmail.commmmmm",
+      "id": "4f01",
+      "name": "Mohamed kamal",
+      "email": "example@gmail.com",
       "password": "11223344"
     }
   ],
@@ -126,31 +120,22 @@
       "status": "pending"
     },
     {
-      "id": "0f20",
       "name": "mmm",
       "description": "12345677899",
       "priority": "medium",
       "dueDate": "2025-08-21",
       "userId": "5a3e",
-      "status": "pending"
+      "status": "completed",
+      "id": "0f20"
     },
     {
-      "name": "nowww",
-      "description": "nowwwwwwwwwwww",
-      "priority": "high",
-      "dueDate": "2025-08-07",
-      "userId": "5a3e",
-      "status": "pending",
-      "id": "0a06"
-    },
-    {
-      "id": "40b8",
       "name": "sss",
       "description": "ddddddddddddddd",
       "priority": "medium",
       "dueDate": "2025-08-08",
       "userId": "5a3e",
-      "status": "pending"
+      "status": "pending",
+      "id": "40b8"
     },
     {
       "id": "b13a",
@@ -178,6 +163,15 @@
       "dueDate": "2025-08-11",
       "userId": "f0c7",
       "status": "pending"
+    },
+    {
+      "name": "gymn",
+      "description": "mmmmmmmmmmmmm",
+      "priority": "high",
+      "dueDate": "2025-08-18",
+      "userId": "4f01",
+      "status": "pending",
+      "id": "002a"
     }
   ]
 }
