@@ -1,20 +1,20 @@
-import fs from "fs";
-import path from "path";
+const fs = require('fs');
+const path = require('path');
 
 // Read database
 const readDB = () => {
-  const dbPath = path.join(process.cwd(), "db.json");
-  const data = fs.readFileSync(dbPath, "utf8");
+  const dbPath = path.join(process.cwd(), 'db.json');
+  const data = fs.readFileSync(dbPath, 'utf8');
   return JSON.parse(data);
 };
 
 // Write database
 const writeDB = (data) => {
-  const dbPath = path.join(process.cwd(), "db.json");
+  const dbPath = path.join(process.cwd(), 'db.json');
   fs.writeFileSync(dbPath, JSON.stringify(data, null, 2));
 };
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   // Enable CORS
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
