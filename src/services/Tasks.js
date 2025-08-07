@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 // Use Vercel API URL in production, localhost in development
 const API_BASE_URL = import.meta.env.PROD
-  ? "https://https://my-to-do-wheat.vercel.app//api"
+  ? "https://https://my-to-do-wheat.vercel.app/api"
   : "http://localhost:3000";
 
 export const TasksApi = {
