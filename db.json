@@ -17,6 +17,12 @@
       "name": "Mohamed kamal",
       "email": "example@gmail.com",
       "password": "11223344"
+    },
+    {
+      "id": "53a1",
+      "name": "kammmmal",
+      "email": "kamal@gmail.com",
+      "password": "12341234"
     }
   ],
   "tasks": [
@@ -62,7 +68,7 @@
       "priority": "medium",
       "dueDate": "2025-08-23",
       "userId": "5a3e",
-      "status": "completed",
+      "status": "pending",
       "id": "1802"
     },
     {
@@ -71,24 +77,6 @@
       "description": "mmmmmmmmmmmmm",
       "priority": "medium",
       "dueDate": "2025-08-16",
-      "userId": "5a3e",
-      "status": "pending"
-    },
-    {
-      "name": "gymnnn",
-      "description": "mmmmmmmmmmmmm",
-      "priority": "medium",
-      "dueDate": "2025-08-09",
-      "userId": "5a3e",
-      "status": "pending",
-      "id": "bdcd"
-    },
-    {
-      "id": "3911",
-      "name": "[[[[[[[[[[[[[[",
-      "description": "pppppppppp",
-      "priority": "medium",
-      "dueDate": "2025-08-09",
       "userId": "5a3e",
       "status": "pending"
     },
@@ -129,24 +117,6 @@
       "id": "0f20"
     },
     {
-      "name": "sss",
-      "description": "ddddddddddddddd",
-      "priority": "medium",
-      "dueDate": "2025-08-08",
-      "userId": "5a3e",
-      "status": "pending",
-      "id": "40b8"
-    },
-    {
-      "id": "b13a",
-      "name": "ssee",
-      "description": "ssssssssssssssssssss",
-      "priority": "medium",
-      "dueDate": "2025-08-30",
-      "userId": "5a3e",
-      "status": "pending"
-    },
-    {
       "id": "0711",
       "name": "tttttttt",
       "description": "mmmmmmmmmmmmm",
@@ -183,13 +153,13 @@
       "status": "pending"
     },
     {
-      "id": "55a8",
-      "name": "tttttttt",
+      "name": "hello",
       "description": "nnnnnnnnnnnnnnnn",
       "priority": "medium",
       "dueDate": "2025-08-10",
       "userId": "5a3e",
-      "status": "pending"
+      "status": "pending",
+      "id": "55a8"
     }
   ]
 }

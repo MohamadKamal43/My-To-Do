@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export const authApi = {
   register: async (name, email, password) => {
@@ -8,6 +9,7 @@ export const authApi = {
         email,
         password,
       });
+      toast.success("User Added Successfully")
       return user;
     } catch (error) {
       console.error("Error registering user:", error);
@@ -26,7 +28,7 @@ export const authApi = {
       delete user.password;
       return user;
     } catch (error) {
-      console.error("Error logging in user:", error);
+      toast.error("Wrong Email or Password")
       throw new Error("Failed to log in. Please check your credentials.");
     }
   },

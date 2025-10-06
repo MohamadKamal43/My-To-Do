@@ -7,6 +7,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import InputFields from "../components/InputFields";
 
 import { Mail, Lock, Eye, EyeOff, LogIn, CircleCheckBig } from "lucide-react";
+import { toast } from "react-toastify";
 
 export default function Login() {
   const { saveUser } = useContext(AuthContext);
@@ -19,9 +20,11 @@ export default function Login() {
     try {
       const user = await authApi.login(values.email, values.password);
       saveUser(user);
+      toast.success("Login Succesfully")
       navigate("/tasks");
     } catch (error) {
-      console.error("Login error:", error);
+      console.error("Login error: Wrong Email or Password");
+      console.error(error)
     } finally {
       setIsLoading(false);
     }
